@@ -37,9 +37,9 @@ const InformationPokemon = ({ pokemon, pokemonIMG, typePokemon, id, nameGenderle
   const randomAttack = Math.floor(Math.random() * 50) + 10
   const randomSpeed = Math.floor(Math.random() * 70) + 10
   
-  const prevPoke = () => history.push(`/pokemon/${+ id -1}`)
+  const prevPoke = () => history.push(`/Pokedex/pokemon/${+ id -1}`)
   
-  const prevNext = () => history.push(`/pokemon/${+ id + 1}`)
+  const prevNext = () => history.push(`/Pokedex/pokemon/${+ id + 1}`)
 
   return (
     <div className='contentArrowWidth'>

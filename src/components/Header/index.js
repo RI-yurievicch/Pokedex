@@ -10,7 +10,7 @@ const Header = () => {
   return (
    <Row className='widthHeader'>
      <Col>
-        <div className='headerLogo' onClick={() => history.push(`/`)}>
+        <div className='headerLogo' onClick={() => history.push(`/Pokedex/`)}>
           <span>P</span>
           <img src={logo} alt='headerlogo' />
           kedex

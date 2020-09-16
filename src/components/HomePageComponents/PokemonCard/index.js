@@ -42,7 +42,7 @@ const PokemonCard = ({ name, url }) => {
   }, [dispatch, id])
 
   return (
-    <div onClick={() => history.push(`/pokemon/${id}`)} className='cardWidthPokemons fade'>
+    <div onClick={() => history.push(`/Pokedex/pokemon/${id}`)} className='cardWidthPokemons fade'>
       <div className='imgWidthPokemons'>
         <img src={POKEMONS_IMG} alt={name} onError={e => e.target.src = logoErrorDefault} />
       </div>
