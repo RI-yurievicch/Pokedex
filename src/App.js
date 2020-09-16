@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, HashRouter } from 'react-router-dom'
 import { unauthorized } from './modules/router/routes'
 import { Layout } from './components/index'
 
@@ -9,10 +9,12 @@ const RouteWithSubRoutes = route => (
 
 const App = () => {
   const renderContent = routes => (
-    <Switch>
-      {routes.map(route => <RouteWithSubRoutes key={route.path} { ...route } />)}
-      <Route component={() => <div>404</div>} />
-    </Switch>
+    <HashRouter basename=''>
+      <Switch>
+        {routes.map(route => <RouteWithSubRoutes key={route.path} { ...route } />)}
+        <Route component={() => <div>404</div>} />
+      </Switch>
+    </HashRouter>
   )
 
   return (
