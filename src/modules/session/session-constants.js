@@ -1,0 +1,2 @@
+export const SESSION_STATE = 'session'
+export const SESSION_GET_POKEMONS_NAME = 'session/SESSION_STATE_GET_POKEMONS_NAME'

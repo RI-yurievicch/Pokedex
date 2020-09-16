@@ -1,0 +1,19 @@
+.ant-layout-header {
+  background: rgba(255, 0, 0, 0.87) !important;
+}
+
+.ant-layout-sider {
+  background: #1042ad !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  min-height: 100vh !important;
+}

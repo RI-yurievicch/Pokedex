@@ -1,0 +1,21 @@
+.widthHeader {
+  display: flex !important;
+  justify-content: center !important;
+  height: 50px !important;
+  align-items: center !important;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: mediumslateblue;
+
+  .headerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
