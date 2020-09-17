@@ -2,13 +2,18 @@ import { HomePage, SpecificationsPokemons } from '../../pages/index'
 
 export const unauthorized = [
   {
+    path: '',
+    component: HomePage,
+    // exact: true,
+  },
+  {
     path: '/',
     component: HomePage,
-    exact: true,
+    // exact: true,
   },
   {
     path: '/pokemon/:id',
     component: SpecificationsPokemons,
-    exact: true,
+    // exact: true,
   },
 ]
