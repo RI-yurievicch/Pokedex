@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Pokedex/static/css/main.1265d3ef.chunk.css",
-    "main.js": "/Pokedex/static/js/main.052c71da.chunk.js",
-    "main.js.map": "/Pokedex/static/js/main.052c71da.chunk.js.map",
+    "main.css": "/Pokedex/static/css/main.ec044b49.chunk.css",
+    "main.js": "/Pokedex/static/js/main.65f1e725.chunk.js",
+    "main.js.map": "/Pokedex/static/js/main.65f1e725.chunk.js.map",
     "runtime-main.js": "/Pokedex/static/js/runtime-main.896a5d6c.js",
     "runtime-main.js.map": "/Pokedex/static/js/runtime-main.896a5d6c.js.map",
     "static/css/2.04ff9426.chunk.css": "/Pokedex/static/css/2.04ff9426.chunk.css",
     "static/js/2.04c7cb38.chunk.js": "/Pokedex/static/js/2.04c7cb38.chunk.js",
     "static/js/2.04c7cb38.chunk.js.map": "/Pokedex/static/js/2.04c7cb38.chunk.js.map",
     "index.html": "/Pokedex/index.html",
-    "precache-manifest.b7389838896e308271632cbf15eea696.js": "/Pokedex/precache-manifest.b7389838896e308271632cbf15eea696.js",
+    "precache-manifest.acedc45bd34bc9a2f4e3f99fc2e8ab22.js": "/Pokedex/precache-manifest.acedc45bd34bc9a2f4e3f99fc2e8ab22.js",
     "service-worker.js": "/Pokedex/service-worker.js",
     "static/css/2.04ff9426.chunk.css.map": "/Pokedex/static/css/2.04ff9426.chunk.css.map",
-    "static/css/main.1265d3ef.chunk.css.map": "/Pokedex/static/css/main.1265d3ef.chunk.css.map",
+    "static/css/main.ec044b49.chunk.css.map": "/Pokedex/static/css/main.ec044b49.chunk.css.map",
     "static/js/2.04c7cb38.chunk.js.LICENSE.txt": "/Pokedex/static/js/2.04c7cb38.chunk.js.LICENSE.txt",
     "static/media/defaultPokemon.png": "/Pokedex/static/media/defaultPokemon.bcde4333.png",
     "static/media/logo.png": "/Pokedex/static/media/logo.dad45556.png"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.896a5d6c.js",
     "static/css/2.04ff9426.chunk.css",
     "static/js/2.04c7cb38.chunk.js",
-    "static/css/main.1265d3ef.chunk.css",
-    "static/js/main.052c71da.chunk.js"
+    "static/css/main.ec044b49.chunk.css",
+    "static/js/main.65f1e725.chunk.js"
   ]
 }
