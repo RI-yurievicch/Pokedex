@@ -1,15 +1,17 @@
 import React from 'react';
-import { Route, Switch, HashRouter } from 'react-router-dom'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import { unauthorized } from './modules/router/routes'
 import { Layout } from './components/index'
 
 const App = () => {
   return (
-    <HashRouter basename='/'>
+    <BrowserRouter basename='Pokedex'>
       <Layout className='wrapper'>
-        {unauthorized.map(route => <Route key={route.path} { ...route } />)}
+        <Switch>
+          {unauthorized.map(route => <Route key={route.path} { ...route } />)}
+        </Switch>
       </Layout>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
