@@ -5,7 +5,7 @@ import { Layout } from './components/index'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='Pokedex'>
       <Layout className='wrapper'>
         <Switch>
           {unauthorized.map(route => <Route key={route.path} { ...route } />)}
