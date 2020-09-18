@@ -7,6 +7,8 @@ import AroowPrew from './AroowPrew'
 import AroowNext from './AroowNext'
 import male from '../../img/male.png'
 import female from '../../img/female.png'
+import backArrow from '../../img/back.png'
+import nextArroww from '../../img/forward.png'
 
 const colorTypes = {
   normal: '#696969',
@@ -49,6 +51,10 @@ const InformationPokemon = ({ pokemon, pokemonIMG, typePokemon, id, nameGenderle
           {pokemon.name}
           <span> #{newId}</span>
         </p>
+        <div className='arrowRes'>
+          {id === 1 ? <img onClick={prevPoke} className='arrowResLeft' src={backArrow} alt='backArrow' /> : id > 1 ? <img onClick={prevPoke} className='arrowResLeft' src={backArrow} alt='backArrow' /> : ''}
+          {id < 10107 && <img onClick={prevNext} className='arrowResRight' src={nextArroww} alt='nextArrow' />}
+        </div>
         <div className='flexContentWidth'>
           <div className='blockImgStatus'>
             <div>
@@ -62,11 +68,11 @@ const InformationPokemon = ({ pokemon, pokemonIMG, typePokemon, id, nameGenderle
             <div className='widthStatusPokemon'>
               <p>Status</p>
               <div>
-                <Progress width={100} percent={rendomHP} status='active' format={percent => 'HP ' + percent + ' %'} />
-                <Progress percent={pokemon.base_experience} status='active' format={percent => 'Base experience ' + percent + ' %'} />
-                <Progress percent={pokemon.stats[0].base_stat} status='active' format={percent => 'Base stat ' + percent + ' %'} />
-                <Progress percent={randomAttack} format={percent => 'Attack ' + percent + ' %'} />
-                <Progress percent={randomSpeed} format={percent => 'Speed ' + percent + ' %'} status='active'/>
+                <Progress width={100} percent={rendomHP} status='active' format={percent => 'HP ' + percent} />
+                <Progress percent={pokemon.base_experience} status='active' format={percent => 'Base experience ' + percent} />
+                <Progress percent={pokemon.stats[0].base_stat} status='active' format={percent => 'Base stat ' + percent} />
+                <Progress percent={randomAttack} format={percent => 'Attack ' + percent} />
+                <Progress percent={randomSpeed} format={percent => 'Speed ' + percent} status='active'/>
               </div>
             </div>
           </div>
@@ -99,7 +105,7 @@ const InformationPokemon = ({ pokemon, pokemonIMG, typePokemon, id, nameGenderle
             </div>
             <div>
               <div className='WeaknessesTextTitle'>Weaknesses</div>
-              <Tag className='WeaknessesText' color='purple'>{pokemon.abilities.map(i => i.ability.name).join(' ')}</Tag>
+              <h2 className='WeaknessesText'>{pokemon.abilities.map(i => i.ability.name).join(' ')}</h2>
             </div>
           </div>
         </div>
